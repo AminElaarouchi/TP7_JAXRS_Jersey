@@ -29,3 +29,17 @@ curl -H "Accept: application/xml" http://localhost:8082/banque/comptes
 ```
 
 Le type de compte est enregistré comme chaîne (`COURANT` ou `EPARGNE`) pour que la base reste lisible et que l'ordre de l'énumération puisse évoluer. `CompteList` fournit une racine JAXB pour les réponses XML contenant plusieurs comptes.
+
+## Résultat vérifié
+
+Commande exécutée le 3 novembre 2026 :
+
+```powershell
+mvn -B test
+```
+
+1 test d’intégration de l’API Jersey réussi avec H2 (0 échec).
+
+![Résultat de la vérification dans le terminal](docs/verification-terminal.png)
+
+L’image est une transcription visuelle de la sortie réelle de vérification ; la capture native de la fenêtre du terminal n’était pas disponible dans cet environnement.
